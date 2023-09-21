@@ -1,0 +1,46 @@
+/*Boton whatsaapp*/
+.float {
+    @include wts;
+}
+
+.fa-whatsapp {
+    @include faW;
+}
+
+.float:hover {
+    @include floatH;
+}
+
+/* Boton instagram */
+.floatIns {
+    @include Ins;
+}
+
+.fa-instagram {
+    @include faI;
+}
+
+.floatIns:hover {
+    @include floatIh;
+}
+
+/*Botones del menu*/
+.navbar-toggler {
+    @include navBorde;
+}
+
+.navbar-toggler:focus {
+    @include navF;
+}
+
+.bordeBarra {
+    @include navB;
+}
+
+.bordeBarra:hover {
+    @include navHover;
+}
+
+.bordeBtnBarra {
+    @include navBtn;
+}

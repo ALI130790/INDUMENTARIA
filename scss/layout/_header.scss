@@ -1,0 +1,19 @@
+/*Header*/
+
+header {
+    background-color: $color-principal;
+    width: 100%;
+
+    nav {
+        @include flex;
+        @extend %estilos;
+
+        ul {
+            @extend %ul;
+
+            li {
+                color: nth($colores, 4);
+            }
+        }
+    }
+}

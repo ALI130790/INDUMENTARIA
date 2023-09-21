@@ -1,0 +1,27 @@
+/*IMAGENES*/
+.galeria {
+    @extend %galeriaPrendas;
+}
+
+.img-uno {
+    @include img-uno;
+}
+
+.img1 {
+    @include img1;
+    @include hover-img1;
+}
+
+.galeriaInicio {
+    @extend %galeria;
+    @include galeria-inicio;
+}
+
+/*IFRAME*/
+.video-responsive {
+    @include video;
+}
+
+.video-responsive .video-responsive iframe {
+    @include videoIframe;
+}

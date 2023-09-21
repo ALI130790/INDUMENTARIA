@@ -1,0 +1,22 @@
+//IMPORT
+@import "utilidades/variables";
+@import "utilidades/listas";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+//BASES
+@import "./bases/reset";
+
+//LAYOT
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+//VIEWS
+@import "./views/texto";
+@import "./views/galeria";
+@import "./views/mediaQ";
+
+//COMPONENTES
+@import "./components/buttons";

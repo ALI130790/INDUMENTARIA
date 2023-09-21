@@ -1,0 +1,250 @@
+//mixin
+
+//mixin con parametros:
+
+@mixin estilos-base ($width, $heigth, $color) {
+    width: $width;
+    height: $heigth;
+    color: $color;
+}
+
+@mixin body ($background-color, $font-size) {
+    background-image: $background-color;
+    font-size: $font-size;
+}
+
+@mixin separa ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+@mixin espacio ($padding-top) {
+    padding-top: padding-top;
+}
+@mixin principal($text-align, $text-decoration, $font-size) {
+    text-align: $text-align;
+    text-decoration: $text-decoration;
+    font-size: $font-size;
+}
+
+@mixin main ($backround-color, $margin, $padding, $font-family, $font-size) {
+    background-color: $backround-color;
+    margin: $margin;
+    padding: $padding;
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+//mixin sin parametros:
+@mixin html {
+    font-size: 62.5%;
+}
+
+@mixin estilos {
+    gap: 2rem;
+    margin: 3rem 1rem 1rem;
+}
+
+@mixin flex {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@mixin hover-img1 {
+    border-radius: 3%;
+    box-shadow: 4px 3px 15px 5px rgb(255, 148, 109);
+}
+
+@mixin img1 {
+    display: flex;
+    width: 380px;
+    height: auto;
+    margin: 15px;
+    padding: 5px;
+    transition: 0, 5s;
+    object-fit: cover;
+}
+
+@mixin img-uno {
+    display: flex;
+    width: 380px;
+    height: 450px;
+    margin: 5px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 3%;
+
+}
+
+@mixin wts {
+    position: fixed;
+    width: 58px;
+    height: 59px;
+    line-height: 50px;
+    bottom: 100px;
+    right: 50px;
+    background-color: $color-whatsapp;
+    color: #fff;
+    border-radius: 100%;
+    right: 100px;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 0px 1px 10px #999;
+    z-index: 999;
+}
+
+@mixin faW {
+    font-size: 60px;
+}
+
+@mixin faI {
+    font-size: 50PX;
+}
+
+@mixin floatH {
+    text-decoration: none;
+    box-shadow: 0px 1px 10px #999;
+    background-color: $color-hover;
+    color: nth($redes, 2);
+}
+
+@mixin Ins {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 40px;
+    right: 45px;
+    background-color: $color-instagram;
+    color: #fff;
+    border-radius: 30%;
+    right: 100px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px #999;
+    z-index: 999;
+}
+
+@mixin floatIh {
+    text-decoration: none;
+    box-shadow: 0px 1px 10px #999;
+    background-color: $color-hover;
+    color: nth($redes, 1);
+}
+
+@mixin texto-img {
+    background-color: $color-imgH;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px #b2a6a6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: #faf3f3;
+    padding: 10px;
+}
+
+
+@mixin video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+@mixin videoIframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin parrafo {
+    font-family: "miFuente"
+        Arial, Helvetica, sans-serif;
+}
+
+@mixin titulo {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    text-align: start;
+}
+
+@mixin tituloEstilo {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: currentColor;
+    top: 1rem;
+    transform: scale(0);
+}
+
+@mixin tituloHover {
+    transform: scale(1);
+}
+
+@mixin tituloA {
+    right: -140px;
+}
+
+@mixin tituloB {
+    left: -140px;
+}
+
+@mixin textoSubrayado {
+    text-decoration: underline 1px;
+}
+
+@mixin textoMargen {
+    text-decoration: underline;
+    text-align: start;
+}
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin galeriaPrendas ($padding-left, $margin, $flex-direction, $flex-wrap, $display, $justify-content, $margin) {
+    padding-left: $padding-left;
+    margin: $margin;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    display: $display;
+    justify-content: $justify-content;
+    margin: $margin;
+}
+
+@mixin galeria-inicio {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin navBorde {
+    border: none !important;
+}
+
+@mixin navF {
+    box-shadow: none !important;
+}
+
+@mixin navB {
+    border: 1px solid black;
+}
+
+@mixin navHover {
+    box-shadow: 0px 1px 10px coral;
+}
+
+@mixin navBtn {
+    margin: 0rem 1rem 1rem;
+}
+
+
+

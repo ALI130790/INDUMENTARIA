@@ -1,0 +1,58 @@
+/*Estilos de texto*/
+p {
+    @include parrafo
+}
+html {
+    @include html;
+}
+/*Estilo en el titulo*/
+#principal {
+    @include titulo;
+}
+
+#principal::after,
+#principal::before {
+    content: '';
+    @include tituloEstilo;
+}
+
+#principal:hover::before,
+#principal:hover::after {
+    @include tituloHover;
+}
+
+#principal::before {
+    @include tituloB;
+
+}
+
+#principal::after {
+    @include tituloA;
+}
+
+.negroCentrado {
+    @extend %texto;
+}
+
+.negroSubrayado {
+    @include textoSubrayado;
+    @extend %texto;
+}
+
+.negroMargen {
+    @include textoMargen;
+    @extend %texto;
+}
+
+/*Separar parrafos, imagenes*/
+.separa {
+    @include separa (20px, 5px)
+}
+.espacio {
+    @include espacio (10px);
+}
+/*tipo de letra*/
+@font-face {
+    font-family: "miFuente";
+    src: url(../fuentes/miFuente.ttf);
+}
