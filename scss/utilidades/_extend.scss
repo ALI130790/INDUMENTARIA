@@ -51,11 +51,10 @@
 }
 
 %galeriaPrendas {
-    padding-left: 10px;
-    margin: 10px;
+   
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
 }

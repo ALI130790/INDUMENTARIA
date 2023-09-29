@@ -32,13 +32,11 @@ main {
   align-content: center; }
 
 .galeria {
-  padding-left: 10px;
-  margin: 10px;
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-evenly;
-  margin: 2rem 1rem; }
+  margin: 1rem 1rem; }
 
 /*RESET*/
 * {
@@ -127,8 +125,8 @@ html {
 /*IMAGENES*/
 .img-uno {
   display: flex;
-  width: 380px;
-  height: 450px;
+  width: 290px;
+  height: 360px;
   margin: 5px;
   padding: 5px;
   object-fit: cover;
